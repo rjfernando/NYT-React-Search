@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "homepage": "http://rjfernando.github.io/nyt-react-search",
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
@@ -10,7 +11,9 @@
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "installDeps": "yarn && cd client && yarn",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Rommel",
   "license": "ISC",
