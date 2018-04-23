@@ -1,22 +1,8 @@
 {
-  "name": "nyt-react-search",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://rjfernando.github.io/nyt-react-search",
-
-  "dependencies": {
-    "axios": "^0.18.0",
-    "babel-cli": "^6.26.0",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.15",
-    "nodemon": "^1.17.3",
-    "react": "^16.3.2",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.3.2",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4"
-  },
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
@@ -24,11 +10,18 @@
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "installDeps": "yarn && cd client && yarn"
   },
+  "author": "Rommel",
+  "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
   }
 }
